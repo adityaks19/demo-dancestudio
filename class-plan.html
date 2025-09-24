@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Plan - Dance Space</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="class-plan.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <div class="logo-icon">DS</div>
+            <span class="logo-text">Dance Space</span>
+        </div>
+        <div class="nav-items">
+            <a href="index.html" class="nav-link">Home</a>
+            <div class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle">Dance</a>
+                <div class="dropdown-menu">
+                    <a href="class-plan.html" class="dropdown-item">Class Plan</a>
+                    <a href="#" class="dropdown-item">Login</a>
+                    <a href="#" class="dropdown-item">Prices</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle">Yoga</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Prices</a>
+                    <a href="#" class="dropdown-item">Classes</a>
+                </div>
+            </div>
+            <a href="#" class="nav-link">Blogs</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Contact</a>
+        </div>
+        <a href="#" class="cta-button">Register</a>
+    </nav>
+
+    <!-- Class Plan Section -->
+    <section class="class-plan-section">
+        <h1 class="page-title">Class Plan</h1>
+        
+        <div class="schedule-grid">
+            <!-- Headers -->
+            <div class="day-header">Time</div>
+            <div class="time-header">15:00 - 16:00</div>
+            <div class="time-header">15:00 - 16:00</div>
+            <div class="time-header">15:00 - 16:00</div>
+            <div class="time-header">15:00 - 16:00</div>
+            <div class="time-header">15:00 - 16:00</div>
+            <div class="time-header">15:00 - 16:00</div>
+            <div class="time-header">15:00 - 16:00</div>
+            
+            <!-- Monday Row -->
+            <div class="day-header">Monday</div>
+            <div class="class-card monday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Hip Hop</div>
+                    <div class="duration">60 minutes</div>
+                    <div class="instructor">Sarah Jonas</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>High-energy hip hop class focusing on street dance fundamentals.</p>
+                </div>
+            </div>
+            <div class="class-card monday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Ballet</div>
+                    <div class="duration">90 minutes</div>
+                    <div class="instructor">Emma Wilson</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Classical ballet technique with focus on posture and grace.</p>
+                </div>
+            </div>
+            <div class="class-card monday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Contemporary</div>
+                    <div class="duration">75 minutes</div>
+                    <div class="instructor">Alex Chen</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Expressive contemporary dance with emotional storytelling.</p>
+                </div>
+            </div>
+            <div class="class-card monday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Jazz</div>
+                    <div class="duration">60 minutes</div>
+                    <div class="instructor">Mike Davis</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Energetic jazz dance with sharp movements and leaps.</p>
+                </div>
+            </div>
+            <div class="class-card monday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Latin</div>
+                    <div class="duration">60 minutes</div>
+                    <div class="instructor">Maria Rodriguez</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Passionate Latin dance including salsa and bachata.</p>
+                </div>
+            </div>
+            <div class="class-card monday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Breakdance</div>
+                    <div class="duration">90 minutes</div>
+                    <div class="instructor">Tony Kim</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Street breakdancing with power moves and toprock.</p>
+                </div>
+            </div>
+            <div class="class-card monday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Freestyle</div>
+                    <div class="duration">45 minutes</div>
+                    <div class="instructor">Lisa Park</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Open freestyle session for creative expression.</p>
+                </div>
+            </div>
+            
+            <!-- Tuesday Row -->
+            <div class="day-header">Tuesday</div>
+            <div class="class-card tuesday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Ballroom</div>
+                    <div class="duration">90 minutes</div>
+                    <div class="instructor">David Smith</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Elegant ballroom dancing including waltz and tango.</p>
+                </div>
+            </div>
+            <div class="class-card tuesday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">K-Pop</div>
+                    <div class="duration">60 minutes</div>
+                    <div class="instructor">Jenny Kim</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Popular K-Pop choreography with synchronized moves.</p>
+                </div>
+            </div>
+            <div class="class-card tuesday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Afro</div>
+                    <div class="duration">60 minutes</div>
+                    <div class="instructor">Amara Johnson</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Traditional African dance with cultural rhythms.</p>
+                </div>
+            </div>
+            <div class="class-card tuesday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Lyrical</div>
+                    <div class="duration">75 minutes</div>
+                    <div class="instructor">Sophie Turner</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Emotional lyrical dance combining ballet and jazz.</p>
+                </div>
+            </div>
+            <div class="class-card tuesday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Bollywood</div>
+                    <div class="duration">60 minutes</div>
+                    <div class="instructor">Priya Sharma</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Vibrant Bollywood dance with Indian choreography.</p>
+                </div>
+            </div>
+            <div class="class-card tuesday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Salsa</div>
+                    <div class="duration">60 minutes</div>
+                    <div class="instructor">Carlos Rivera</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Passionate salsa dancing with Latin rhythms.</p>
+                </div>
+            </div>
+            <div class="class-card tuesday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">House</div>
+                    <div class="duration">75 minutes</div>
+                    <div class="instructor">Marcus Johnson</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Underground house dance with footwork and jacking.</p>
+                </div>
+            </div>
+            
+            <!-- Wednesday Row -->
+            <div class="day-header">Wednesday</div>
+            <div class="class-card wednesday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Popping</div>
+                    <div class="duration">60 minutes</div>
+                    <div class="instructor">Robot Mike</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Street popping with isolations and robotics.</p>
+                </div>
+            </div>
+            <div class="class-card wednesday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Locking</div>
+                    <div class="duration">60 minutes</div>
+                    <div class="instructor">Funky Pete</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Classic locking with funky grooves and points.</p>
+                </div>
+            </div>
+            <div class="class-card wednesday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Waacking</div>
+                    <div class="duration">75 minutes</div>
+                    <div class="instructor">Diva Jones</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Dramatic waacking with arm movements and poses.</p>
+                </div>
+            </div>
+            <div class="class-card wednesday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Dancehall</div>
+                    <div class="duration">60 minutes</div>
+                    <div class="instructor">Shelly Kingston</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Jamaican dancehall with Caribbean vibes.</p>
+                </div>
+            </div>
+            <div class="class-card wednesday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Flamenco</div>
+                    <div class="duration">90 minutes</div>
+                    <div class="instructor">Isabella Garcia</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Traditional Spanish flamenco with passion.</p>
+                </div>
+            </div>
+            <div class="class-card wednesday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Tango</div>
+                    <div class="duration">75 minutes</div>
+                    <div class="instructor">Ricardo Santos</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Romantic Argentine tango with intricate steps.</p>
+                </div>
+            </div>
+            <div class="class-card wednesday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Swing</div>
+                    <div class="duration">60 minutes</div>
+                    <div class="instructor">Johnny Swing</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Classic swing dance with partner work.</p>
+                </div>
+            </div>
+            
+            <!-- Thursday Row -->
+            <div class="day-header">Thursday</div>
+            <div class="class-card thursday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Capoeira</div>
+                    <div class="duration">90 minutes</div>
+                    <div class="instructor">Mestre João</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Brazilian capoeira with martial arts flow.</p>
+                </div>
+            </div>
+            <div class="class-card thursday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Belly Dance</div>
+                    <div class="duration">60 minutes</div>
+                    <div class="instructor">Amira Hassan</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Middle Eastern belly dance with fluid movements.</p>
+                </div>
+            </div>
+            <div class="class-card thursday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Irish Step</div>
+                    <div class="duration">75 minutes</div>
+                    <div class="instructor">Seamus O'Brien</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Traditional Irish step dancing with precision.</p>
+                </div>
+            </div>
+            <div class="class-card thursday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Bhangra</div>
+                    <div class="duration">60 minutes</div>
+                    <div class="instructor">Raj Patel</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Energetic Punjabi bhangra with shoulder moves.</p>
+                </div>
+            </div>
+            <div class="class-card thursday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Samba</div>
+                    <div class="duration">60 minutes</div>
+                    <div class="instructor">Carla Silva</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Brazilian samba with carnival energy.</p>
+                </div>
+            </div>
+            <div class="class-card thursday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Rumba</div>
+                    <div class="duration">75 minutes</div>
+                    <div class="instructor">Miguel Torres</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Sensual rumba with slow romantic movements.</p>
+                </div>
+            </div>
+            <div class="class-card thursday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Cha Cha</div>
+                    <div class="duration">60 minutes</div>
+                    <div class="instructor">Luna Martinez</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Lively cha cha with quick triple steps.</p>
+                </div>
+            </div>
+            
+            <!-- Friday Row -->
+            <div class="day-header">Friday</div>
+            <div class="class-card friday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Quickstep</div>
+                    <div class="duration">75 minutes</div>
+                    <div class="instructor">Swift Sam</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Elegant quickstep with light and quick steps.</p>
+                </div>
+            </div>
+            <div class="class-card friday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Viennese Waltz</div>
+                    <div class="duration">60 minutes</div>
+                    <div class="instructor">Vienna Rose</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Classic Viennese waltz with continuous turns.</p>
+                </div>
+            </div>
+            <div class="class-card friday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Foxtrot</div>
+                    <div class="duration">75 minutes</div>
+                    <div class="instructor">Smooth Steve</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Smooth foxtrot with walking steps and turns.</p>
+                </div>
+            </div>
+            <div class="class-card friday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Mambo</div>
+                    <div class="duration">60 minutes</div>
+                    <div class="instructor">Mambo Maria</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Hot mambo with Cuban hip movements.</p>
+                </div>
+            </div>
+            <div class="class-card friday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Merengue</div>
+                    <div class="duration">45 minutes</div>
+                    <div class="instructor">Dominican Dan</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Simple merengue with marching steps.</p>
+                </div>
+            </div>
+            <div class="class-card friday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Cumbia</div>
+                    <div class="duration">60 minutes</div>
+                    <div class="instructor">Colombian Carlos</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Traditional cumbia with circular movements.</p>
+                </div>
+            </div>
+            <div class="class-card friday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Reggaeton</div>
+                    <div class="duration">60 minutes</div>
+                    <div class="instructor">Urban Alex</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Modern reggaeton with urban street moves.</p>
+                </div>
+            </div>
+            
+            <!-- Saturday Row -->
+            <div class="day-header">Saturday</div>
+            <div class="class-card saturday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Bachata</div>
+                    <div class="duration">60 minutes</div>
+                    <div class="instructor">Romeo Rodriguez</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Romantic bachata with hip movements and dips.</p>
+                </div>
+            </div>
+            <div class="class-card saturday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Salsa Cubana</div>
+                    <div class="duration">75 minutes</div>
+                    <div class="instructor">Havana Hector</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Authentic Cuban salsa with rueda patterns.</p>
+                </div>
+            </div>
+            <div class="class-card saturday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Salsa LA</div>
+                    <div class="duration">60 minutes</div>
+                    <div class="instructor">LA Luis</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Los Angeles style salsa with linear patterns.</p>
+                </div>
+            </div>
+            <div class="class-card saturday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Salsa NY</div>
+                    <div class="duration">75 minutes</div>
+                    <div class="instructor">Manhattan Mike</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>New York style salsa with mambo timing.</p>
+                </div>
+            </div>
+            <div class="class-card saturday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Argentine Tango</div>
+                    <div class="duration">90 minutes</div>
+                    <div class="instructor">Buenos Aires Bob</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Passionate Argentine tango with improvisation.</p>
+                </div>
+            </div>
+            <div class="class-card saturday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">Milonga</div>
+                    <div class="duration">60 minutes</div>
+                    <div class="instructor">Tango Teresa</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Playful milonga with faster tango rhythms.</p>
+                </div>
+            </div>
+            <div class="class-card saturday" onclick="flipCard(this)">
+                <div class="card-front">
+                    <div class="studio">West Coast Swing</div>
+                    <div class="duration">75 minutes</div>
+                    <div class="instructor">Coast Casey</div>
+                    <div class="description-btn">More</div>
+                </div>
+                <div class="card-back">
+                    <p>Smooth West Coast swing with slot dancing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function flipCard(card) {
+            card.classList.toggle('flipped');
+        }
+    </script>
+</body>
+</html>
